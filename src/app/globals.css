@@ -1,0 +1,72 @@
+/* @import "tailwindcss";
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  Keep your new variables too (for consistency with v4 theme)
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  Keep your new font-family as fallback
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+
+
+@import "tailwindcss";
+
+:root {
+  --foreground-rgb: 17, 24, 39;     /* near-black / gray-900 for text */
+  --background: #ffffff;            /* pure white */
+  --grid-color: rgba(18, 18, 18, 0.10);   /* #121212 at ~10% opacity */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 229, 231, 235;   /* gray-200 light text */
+    /* --background: #0f0f0f;             very dark (or keep #121212) */
+    --background: #FCFCFC;             /* very dark (or keep #121212) */
+    --grid-color: rgba(230, 230, 230, 0.187);   /* light subtle grid in dark mode */
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .text-color {
+  color: #1A7BFF;
+} */
+
+/* Optional: remove the old gradient if you don't need it anymore */
