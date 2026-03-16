@@ -24,7 +24,7 @@ const SkillProgressBar: React.FC<SkillProgressBarProps> = ({ label, percentage }
 interface TabData {
   title: string;
   id: string;
-  content: JSX.Element;
+  content: React.ReactNode;
 }
 
 const TAB_DATA: TabData[] = [
