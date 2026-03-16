@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Modal from "react-modal";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -20,7 +20,15 @@ const UiUxModal: React.FC<UiUxModalProps> = ({
   caseStudyContent,
   caseStudyComponent,
 }) => {
+  const [mounted, setMounted] = useState(false);
   const hasComponent = !!caseStudyComponent;
+
+  // Ensure this only runs on client-side
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null; // prevents SSR error
 
   return (
     <Modal
@@ -28,9 +36,7 @@ const UiUxModal: React.FC<UiUxModalProps> = ({
       onRequestClose={onClose}
       shouldCloseOnOverlayClick={true}
       shouldCloseOnEsc={true}
-      appElement={
-        typeof document !== "undefined" ? document.getElementById("__next") : null
-      }
+      appElement={document.getElementById("__next")!} // non-null assertion
       style={{
         overlay: {
           position: "fixed",
@@ -84,7 +90,6 @@ const UiUxModal: React.FC<UiUxModalProps> = ({
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               components={{
-                // Title font size 24px (h1, h2, h3)
                 h1: ({ children }) => (
                   <h1 className="text-[24px] font-bold mt-8 mb-4 text-[#171717]">
                     {children}
@@ -101,9 +106,7 @@ const UiUxModal: React.FC<UiUxModalProps> = ({
                   </h3>
                 ),
                 p: ({ children }) => (
-                  <p className="text-[#171717] leading-relaxed mb-4">
-                    {children}
-                  </p>
+                  <p className="text-[#171717] leading-relaxed mb-4">{children}</p>
                 ),
                 ul: ({ children }) => (
                   <ul className="list-disc ml-6 mb-6 space-y-2 text-[#171717]">
@@ -111,9 +114,7 @@ const UiUxModal: React.FC<UiUxModalProps> = ({
                   </ul>
                 ),
                 strong: ({ children }) => (
-                  <strong className="font-semibold text-[#171717]">
-                    {children}
-                  </strong>
+                  <strong className="font-semibold text-[#171717]">{children}</strong>
                 ),
                 img: ({ src, alt }) => (
                   <img
