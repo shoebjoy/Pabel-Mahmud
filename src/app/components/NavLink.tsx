@@ -1,15 +1,16 @@
+"use client";
 import React from "react";
 
 interface NavLinkProps {
-  href?: string;        // optional now
+  href?: string;         // optional for scroll-only links
   title: string;
-  onClick?: () => void; // optional click handler
+  onClick?: () => void;  // optional click handler
 }
 
 const NavLink: React.FC<NavLinkProps> = ({ href, title, onClick }) => {
   const handleClick = () => {
     if (onClick) onClick();
-    if (href) window.location.href = href; // only navigate if href exists
+    if (href) window.location.href = href; // navigate if href exists
   };
 
   return (
