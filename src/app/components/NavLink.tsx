@@ -1,16 +1,15 @@
 import React from "react";
 
 interface NavLinkProps {
-  href: string;
+  href?: string;        // optional now
   title: string;
-  onClick?: () => void; // keep optional in case you want click handling
+  onClick?: () => void; // optional click handler
 }
 
 const NavLink: React.FC<NavLinkProps> = ({ href, title, onClick }) => {
   const handleClick = () => {
     if (onClick) onClick();
-    // Navigate to href
-    window.location.href = href;
+    if (href) window.location.href = href; // only navigate if href exists
   };
 
   return (
