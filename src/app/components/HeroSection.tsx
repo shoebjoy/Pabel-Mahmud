@@ -62,7 +62,7 @@ const HeroSection: React.FC = () => {
         >
           <div className="relative w-75 h-75 lg:w-125px lg:h-125px">
             <Image
-              src="/images/photo.png"
+              src="/images/pabel.png"
               alt="Pabel Mahmud"
               fill
               className="object-cover rounded-[3xl]"

@@ -54,9 +54,9 @@ const projectsData: Project[] = [
   { id: 33, title: "Facebook Post Buddha Purnima", description: "", image: "/images/projects/Buddha Purnima 2024.jpg", tag: ["Social Media"], gitUrl: "/", previewUrl: "/", videoId: "" },
 
   // Printing (ids 41–50)
-  { id: 51, title: "Zariya", description: "Zariya", image: "/images/projects/zariya.png", tag: ["Printing"], gitUrl: "/", previewUrl: "/", videoId: "" },
-  { id: 52, title: "Islamise", description: "Islamise", image: "/images/projects/islamise-1.png", tag: ["Printing"], gitUrl: "/", previewUrl: "/", videoId: "" },
-  { id: 53, title: "Islamise", description: "Islamise", image: "/images/projects/islamise-2.png", tag: ["Printing"], gitUrl: "/", previewUrl: "/", videoId: "" },
+  { id: 51, title: "Stationeries", description: "Zariya", image: "/images/projects/zariya.png", tag: ["Printing"], gitUrl: "/", previewUrl: "/", videoId: "" },
+  { id: 52, title: "ID Card & Gift", description: "Islamise", image: "/images/projects/islamise-1.png", tag: ["Printing"], gitUrl: "/", previewUrl: "/", videoId: "" },
+  { id: 53, title: "Stationeries & Packaging", description: "Islamise", image: "/images/projects/islamise-2.png", tag: ["Printing"], gitUrl: "/", previewUrl: "/", videoId: "" },
   { id: 54, title: "A4 Flayer", description: "Hi-Tech Furniture & Lifestyle", image: "/images/projects/P1.jpg", tag: ["Printing"], gitUrl: "/", previewUrl: "/", videoId: "" },
   { id: 55, title: "Fabric Banner 01", description: "Hi-Tech Furniture & Lifestyle", image: "/images/projects/P2.jpg", tag: ["Printing"], gitUrl: "/", previewUrl: "/", videoId: "" },
   { id: 56, title: "Fabric Banner 02", description: "Hi-Tech Furniture & Lifestyle", image: "/images/projects/P4.jpg", tag: ["Printing"], gitUrl: "/", previewUrl: "/", videoId: "" },
@@ -89,7 +89,7 @@ const projectsData: Project[] = [
   caseStudyContent: `
 ![Hero Image](/images/projects/asian-hero.png)
 
-**Asian Network BD — Corporate Website Design**
+### Asian Network BD — Corporate Website Design
 
 **Role:** UI/UX Design, Website Design  
 **Tools:** Figma, WordPress  
@@ -148,9 +148,9 @@ This project helped refine my approach to corporate UX design.
 
 {
   id: 102,
-  title: "Oraville – Perfume E-commerce Website",
-  description: "Modern e-commerce website for perfume collections with strong visual appeal and conversion focus",
-  image: "/images/projects/oraville-hero.png",
+  title: "Oraville",
+  description: "Modern e-commerce website for perfume collections with strong visual appeal and conversion focus.",
+  image: "/images/projects/oraville thumbnail.png",
   tag: ["UI / UX"],
   gitUrl: "/",
   previewUrl: "/",
@@ -158,7 +158,7 @@ This project helped refine my approach to corporate UX design.
   caseStudyContent: `
 ![Hero Image](/images/projects/oraville-hero.png)
 
-**Oraville – Perfume E-commerce Website**
+### Oraville – Perfume E-commerce Website
 
 **Role:** UI/UX Design, E-commerce Website Design  
 **Tools:** Figma, WordPress  
@@ -180,6 +180,8 @@ Key challenges included:
 - Designing a simple purchase flow for quick ordering
 
 ### 2. Research & Discovery
+
+![Research Image](/images/projects/product-research.png)
 
 Research included:
 
@@ -205,15 +207,15 @@ Main design goals:
 
 ### 4. Wireframe
 
-![Wireframe Image](/images/projects/oraville-wireframe.png)
+![Wireframe Image](/images/projects/ware-framing.png)
 
 ### 5. Visual Design
 
-![Visual Design](/images/projects/oraville-design.png)
+![Visual Design](/images/projects/oraville-visual.png)
 
 ### 6. Responsive Design
 
-![Responsive Design](/images/projects/oraville-responsive.png)
+![Responsive Design](/images/projects/responsive-oravelli.png)
 
 ### 7. Results / Impact
 
