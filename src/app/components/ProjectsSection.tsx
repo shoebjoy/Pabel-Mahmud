@@ -66,16 +66,18 @@ const projectsData: Project[] = [
   // Videos (ids 51–70)
   { id: 76, title: "App Promo", description: "", image: "/images/projects/App.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "7ukDZFMBmcA" },
   { id: 77, title: "App Preview (Interactive)", description: "", image: "/images/projects/App2.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "yFmkT5mYvIg" },
-  { id: 78, title: "Transform Your Living Room", description: "", image: "/images/projects/Transform Your Living Room.png", tag: ["Video"], gitUrl: "/", previewUrl: "/", videoId: "c0SariHvBNY" },
-  { id: 79, title: "Beauty with Botanica", description: "", image: "/images/projects/Beauty with Botanica.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "YswDfjHC6FI" },
-  { id: 80, title: "Choice Legacy", description: "", image: "/images/projects/Choice.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "JiSylJxuk08" },
-  { id: 81, title: "A Trailer with Suzuki Gixxer", description: "", image: "/images/projects/Suzuki.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "KxAw921Wmo0" },
-  { id: 82, title: "Every Stage of Womanhood", description: "", image: "/images/projects/Every Stage of Womanhood.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "W-ct53UW-Es" },
-  { id: 83, title: "New Arrival", description: "", image: "/images/projects/Furniture1.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "VxeQ1vuoDbc" },
-  { id: 84, title: "China's Death Valley", description: "", image: "/images/projects/Death.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "593qKMyJKBI" },
-  { id: 85, title: "Grand Opening Uttara", description: "", image: "/images/projects/Uttara.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "XZvsIZ_Pmr0" },
-  { id: 86, title: "Tiffany Blue", description: "", image: "/images/projects/Jersey.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "KLhr-5Kj2xM" },
-  // UI/UX Case Studies (example – add your real ones here)
+  { id: 78, title: "Mattress commercial", description: "", image: "/images/projects/Mattress.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "Hjo16wKMHp4" },
+  { id: 79, title: "Transform Your Living Room", description: "", image: "/images/projects/Transform Your Living Room.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "c0SariHvBNY" },
+  { id: 80, title: "Dashboard Interactive Prototype", description: "", image: "/images/projects/Dashboard.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "fIE1bbR9Ng4" },
+  { id: 81, title: "Beauty with Botanica", description: "", image: "/images/projects/Beauty with Botanica.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "YswDfjHC6FI" },
+  { id: 82, title: "Choice Legacy", description: "", image: "/images/projects/Choice.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "JiSylJxuk08" },
+  { id: 83, title: "A Trailer with Suzuki Gixxer", description: "", image: "/images/projects/Suzuki.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "KxAw921Wmo0" },
+  { id: 84, title: "Every Stage of Womanhood", description: "", image: "/images/projects/Every Stage of Womanhood.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "W-ct53UW-Es" },
+  { id: 85, title: "New Arrival", description: "", image: "/images/projects/Furniture1.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "VxeQ1vuoDbc" },
+  { id: 86, title: "China's Death Valley", description: "", image: "/images/projects/Death.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "593qKMyJKBI" },
+  { id: 87, title: "Grand Opening Uttara", description: "", image: "/images/projects/Uttara.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "XZvsIZ_Pmr0" },
+  { id: 88, title: "Tiffany Blue", description: "", image: "/images/projects/Jersey.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "KLhr-5Kj2xM" },
+  { id: 89, title: "Durga Puja - 2022", description: "", image: "/images/projects/Durga.png", tag: ["Videos"], gitUrl: "/", previewUrl: "/", videoId: "3_Y5ElQr7do?" },
   // UI/UX Case Studies
 {
   id: 101,
@@ -233,7 +235,7 @@ This project strengthened my approach to e-commerce UX design and conversion-foc
 ];
 
 const ProjectsSection: React.FC = () => {
-  const [tag, setTag] = useState<string>("Logo");
+  const [tag, setTag] = useState<string>("UI / UX");
   const ref = useRef<HTMLUListElement>(null);
   const isInView = useInView(ref, { once: true });
 
@@ -252,7 +254,7 @@ const ProjectsSection: React.FC = () => {
 
   return (
     <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-16 mb-8 md:mb-12">
+      <h2 className="text-center text-4xl font-bold text-[#171717] mt-16 mb-8 md:mb-12">
         My Projects
       </h2>
 
