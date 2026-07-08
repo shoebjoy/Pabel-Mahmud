@@ -235,7 +235,7 @@ This project strengthened my approach to e-commerce UX design and conversion-foc
 ];
 
 const ProjectsSection: React.FC = () => {
-  const [tag, setTag] = useState<string>("UI / UX");
+  const [tag, setTag] = useState<string>("Logo");
   const ref = useRef<HTMLUListElement>(null);
   const isInView = useInView(ref, { once: true });
 
